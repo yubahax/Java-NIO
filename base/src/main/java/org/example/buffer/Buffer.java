@@ -1,4 +1,4 @@
-package org.example;
+package org.example.buffer;
 
 import java.nio.IntBuffer;
 

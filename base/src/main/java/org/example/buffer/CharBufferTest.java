@@ -1,7 +1,6 @@
-package org.example;
+package org.example.buffer;
 
 import java.nio.CharBuffer;
-import java.util.Arrays;
 
 public class CharBufferTest {
     public static void main(String[] args) {
