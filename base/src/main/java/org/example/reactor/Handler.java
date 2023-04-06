@@ -19,17 +19,20 @@ public class Handler implements Runnable{
         try {
             ByteBuffer buffer = ByteBuffer.allocate(1024);
             channel.read(buffer);
-            System.out.println("111111111111111111111111");
             buffer.flip();
-
-            POOL.submit(() -> {
-                try {
-                    System.out.println("接收到客户端数据："+new String(buffer.array(), 0, buffer.remaining()));
-                    channel.write(ByteBuffer.wrap("已收到！".getBytes()));
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-            });
+            if(channel.read(buffer) < 0) {
+                System.out.println("客户端已经断开连接了："+channel.getRemoteAddress());
+                channel.close();   //直接关闭此通道
+            } else {
+                POOL.submit(() -> {
+                    try {
+                        System.out.println(Thread.currentThread().getName() + "->接收到客户端数据：" + new String(buffer.array(), 0, buffer.remaining()));
+                        channel.write(ByteBuffer.wrap("已收到！".getBytes()));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

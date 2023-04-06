@@ -32,6 +32,7 @@ public class SubReactor implements Runnable, Closeable {
     public static Selector nextSelector(){
         Selector selector = reactors[selectedIndex].selector;
         selectedIndex = (selectedIndex + 1) % 4;
+
         return selector;
     }
 

@@ -4,25 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54166c1f-60db-4382-be0e-f1c623a96a2f" name="变更" comment="init">
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/channel/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/channel/FIleClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/channel/channelsocket/cilent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/channel/channelsocket/server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/channel/socket/cilent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/channel/socket/server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Acceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Reactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/ReactorServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/SubReactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/sector/SectorCilent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/sector/SectorServer.java" afterDir="false" />
+    <list default="true" id="54166c1f-60db-4382-be0e-f1c623a96a2f" name="变更" comment="nio 三大组件学习完毕">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_haproxy_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_smtp_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_xml_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_aarch_64_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_kqueue_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_aarch_64_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_aarch_64_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_76_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/netty/Bytebuf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/netty/Eventloop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/netty/NettyCilent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/org/example/netty/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/buffer/Buffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/ByteBufferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/buffer/ByteBufferTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/Channel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/CharBufferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/buffer/CharBufferTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Acceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Acceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Reactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/Reactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/SubReactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/org/example/reactor/SubReactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +78,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\yubaproject\JavaNIo\base" />
       <recent name="F:\yubaproject\JavaNIo" />
       <recent name="F:\yubaproject\JavaNIo\base\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.org.example.channel.socket.cilent">
+  <component name="RunManager" selected="应用程序.NettyCilent">
+    <configuration name="Bytebuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.netty.Bytebuf" />
+      <module name="base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileClock2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.channel.FIleClock" />
       <module name="base" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyCilent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.netty.NettyCilent" />
+      <module name="base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.netty.NettyServer" />
+      <module name="base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,19 +153,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SectorServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sector.SectorServer" />
-      <module name="base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.sector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,47 +173,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.channel.socket.cilent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.channel.socket.cilent" />
+    <configuration name="cilent2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.channel.channelsocket.cilent" />
       <module name="base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.channel.socket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.channelsocket.cilent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.channelsocket.cilent" />
-      <module name="base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.channelsocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="应用程序.FileClock2" />
+      <item itemvalue="应用程序.cilent2" />
+      <item itemvalue="应用程序.Bytebuf" />
+      <item itemvalue="应用程序.NettyCilent" />
+      <item itemvalue="应用程序.NettyServer" />
       <item itemvalue="应用程序.ReactorServer" />
-      <item itemvalue="应用程序.SectorServer" />
       <item itemvalue="应用程序.cilent" />
-      <item itemvalue="应用程序.org.example.channel.socket.cilent" />
-      <item itemvalue="应用程序.org.example.channelsocket.cilent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.org.example.channel.socket.cilent" />
-        <item itemvalue="应用程序.ReactorServer" />
+        <item itemvalue="应用程序.NettyCilent" />
+        <item itemvalue="应用程序.NettyServer" />
         <item itemvalue="应用程序.cilent" />
-        <item itemvalue="应用程序.SectorServer" />
-        <item itemvalue="应用程序.org.example.channelsocket.cilent" />
+        <item itemvalue="应用程序.Bytebuf" />
+        <item itemvalue="应用程序.ReactorServer" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +208,10 @@
       <option name="presentableId" value="Default" />
       <updated>1680602573880</updated>
       <workItem from="1680602575037" duration="5773000" />
-      <workItem from="1680680574776" duration="5802000" />
+      <workItem from="1680680574776" duration="6024000" />
+      <workItem from="1680686802500" duration="22000" />
+      <workItem from="1680696493831" duration="2717000" />
+      <workItem from="1680746302073" duration="4543000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1680608416043</created>
@@ -179,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680608416043</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nio 三大组件学习完毕">
+      <created>1680686438212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680686438212</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +245,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="nio 三大组件学习完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="nio 三大组件学习完毕" />
   </component>
 </project>
